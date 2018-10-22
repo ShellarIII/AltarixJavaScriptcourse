@@ -31,7 +31,7 @@ function calculate(first,operator,second){
 function countString(arr,searchString){
     let counter = 0;
     for (let i = 0; i < arr.length; i++) {
-        if(arr[i].indexOf(searchString) !== -1){
+        if(arr[i].toLowerCase().indexOf(searchString.toLowerCase()) !== -1){
             counter++;
         }
     }
