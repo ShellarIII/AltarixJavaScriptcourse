@@ -16,9 +16,11 @@ function countLetterO(str){
 //3
 function editCSS({elementId, color='blue', border='1px solid red', font='15px Arial'}){
 	let elementDOM = document.getElementById(elementId);
-	elementDOM.style.color = color;
-	elementDOM.style.border = border;
-	elementDOM.style.font = font;
+	if (elementDOM !== null){
+		elementDOM.style.color = color;
+		elementDOM.style.border = border;
+		elementDOM.style.font = font;
+	}
 }
 
 //4
